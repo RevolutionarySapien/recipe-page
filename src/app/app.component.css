@@ -1,0 +1,220 @@
+.ff-ys {
+  font-family: "Young-serif";
+}
+
+.nutmeg {
+  color: var(--Nutmeg);
+}
+
+.bold {
+  font-weight: 700;
+  /* color: black; */
+}
+
+.raspberry {
+  color: var(--Dark-Raspberry);
+}
+
+/* --------------------- */
+/*        GENERAL        */
+/* --------------------- */
+
+h2 {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+/* --------------------- */
+/*       CONTAINER       */
+/* --------------------- */
+
+.container {
+  max-width: 40rem;
+  max-height: auto;
+  padding: 2.5rem;
+  background-color: var(--White);
+  border-radius: 15px;
+  margin: 4rem 0;
+}
+
+.food-img-wrapper {
+  height: 18rem;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url("src/assets/images/image-omelette.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --------------------- */
+/*     HEADER-SUMMARY    */
+/* --------------------- */
+
+.omellete-title {
+  color: black;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.summary-text {
+  display: inline;
+  margin: 1.5rem 0;
+  width: auto;
+}
+
+.header-summary-wrapper {
+  width: 100%;
+}
+
+/* --------------------- */
+/*      PREPARATION      */
+/* --------------------- */
+
+.prep-time-wrapper {
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  background-color: hsla(332, 81%, 73%, 0.076);
+  padding: 1rem 2rem;
+}
+
+.preparation-title {
+  margin-bottom: 0.8rem;
+}
+
+.preparation-list {
+  line-height: 1.8rem;
+  padding-left: 0.5rem;
+}
+
+.preparation-list li {
+  padding-left: 1rem;
+}
+
+.preparation-list li::marker {
+  font-size: 0.8em;
+  line-height: 0.1;
+  color: black;
+}
+
+/* --------------------- */
+/*       INGREDIENT      */
+/* --------------------- */
+
+.ingredients-wrapper ul {
+  line-height: 2rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ingredients-wrapper li::marker {
+  font-size: 0.8em;
+  line-height: 0.1;
+  color: black;
+}
+
+.ingredients-wrapper ul {
+  padding-left: 1rem;
+}
+
+.ingredients-wrapper li {
+  padding-left: 1rem;
+}
+
+/* --------------------- */
+/*      INSTRUCTION      */
+/* --------------------- */
+
+.instructions-wrapper {
+  border-bottom: 1px solid gray;
+
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.instructions-wrapper ol {
+  padding-left: 1rem;
+}
+
+.instructions-wrapper li {
+  padding-left: 1rem;
+  line-height: 1.4rem;
+  padding-bottom: 0.8rem;
+}
+
+/* --------------------- */
+/*         TABLE         */
+/* --------------------- */
+
+.nutrition-wrapper p {
+  display: inline;
+}
+
+table {
+  margin-top: 1.3rem;
+}
+
+.nutrition-type {
+  padding-left: 2rem;
+}
+.gs {
+  font-weight: 600;
+}
+
+table,
+p {
+  width: 100%;
+  font-family: "outfit";
+}
+
+table,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+  height: 3rem;
+}
+
+table,
+tr:last-child,
+tr:first-child {
+  border: none;
+}
+
+/* --------------------- */
+/*        QUERIES        */
+/* --------------------- */
+
+@media (max-width: 750px) {
+  .container {
+    margin: 0;
+    /* font-size: 14px; */
+    /* background-color: aqua; */
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding: 1.2rem;
+    /* width: 100vh; */
+    font-size: 12px;
+  }
+  .omellete-title {
+    font-size: 2rem;
+  }
+  .data-wrapper {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  h2 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  .container {
+    padding: 0.5rem;
+  }
+}
